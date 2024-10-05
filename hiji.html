@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo pagina</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        nav {
+            background-color: magenta;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+        }
+
+        .content .left {
+            background-color: limegreen;
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .content .right {
+            background-color: yellow;
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        section.full {
+            background-color: orange;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        footer {
+            background-color: blue;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header>HEADER</header>
+    <nav>NAV</nav>
+    <div class="content">
+        <section class="left">Section</section>
+        <section class="right">Section</section>
+    </div>
+    <section class="full">Section</section>
+    <footer>Footer</footer>
+</body>
+</html>
